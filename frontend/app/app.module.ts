@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms'
+import { ServiceService} from './service/service.service'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
